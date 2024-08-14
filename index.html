@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .container{
+        width: 100%;
+        margin: 20px;
+    }
+    .block-element{
+        display: block;
+        background-color: lightslategray;
+        border: 2px solid rgb(139, 0, 19);
+        margin-bottom: 10px;
+        padding: 10px;
+        }
+        .inline-element{
+            display: inline-block;
+            background-color:lightcoral;
+            border: 2px solid darkgreen;
+            margin: 10px;
+            padding: 10px;
+        }
+        .inline-block{
+            background-color: lightgreen;
+            border: 2px solid darkgreen;
+            margin-right: 10px;
+            padding: 10px;
+        }
+        .wrapper{
+            border: 2px solid black;
+            padding: 20px;
+        }
+        section{
+        display: block;
+        background-color: lightblue;
+        border: 2px solid red;
+        margin-bottom: 10px;
+        padding: 10px;
+        margin-top:10px;
+         }
+</style>
+<body>
+    <div class="container">
+        <div class="wrapper">
+        <div class="block-element"><h1>headding !h1 is a block level element</h1></div>
+        <span class="inline-element">SPAN TAG! "inline element"</span>
+        <span class="inline-element">SPAN TAG! "inline element"</span>
+        <div class="inline-block">
+            <h2>img tag is a inline block element</h2><br><br>
+        <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEABsbGxscGx4hIR4qLSgtKj04MzM4PV1CR0JHQl2NWGdYWGdYjX2Xe3N7l33gsJycsOD/2c7Z//////////////8BGxsbGxwbHiEhHiotKC0qPTgzMzg9XUJHQkdCXY1YZ1hYZ1iNfZd7c3uXfeCwnJyw4P/Zztn////////////////CABEIAGYAZgMBIgACEQEDEQH/xAAaAAACAwEBAAAAAAAAAAAAAAAABAEFBgMC/9oACAEBAAAAANMRxxjtW07qSQI5ZV+vfNCSHOpAAOlsHjHAe5D3rQMW86dPRUGqAxjbh092mV76QDHyye+t5krK9CMtN2dPfrJ3FyBmVbek6P3GXvLUDOo6ms52Jm9DYBFHUvOtLIJ6dsCqoYPZE6vsBHhJBKzebJP/xAAZAQEAAwEBAAAAAAAAAAAAAAAAAQIDBAX/2gAKAgIQAxAAAAAAAtHoYiDl157y9Tn5NEXjO/Nc9Tn5dIi8Y6Y2PTw576Uhy652PRwlWNq+X01kN6b04toH/8QAMRAAAQMCAwYFAwQDAAAAAAAAAQACAwQRBRIVIDEyU2GSECFRYmQTFDMiNFJzMHGh/9oACAEBAAE/APGp/aVX9D1QYa+uEhbIG5FidMaSgpIS8EiR6hFLmjuZc1xuAWLZNUqM264WCCD7t+Qv/Ef8E7S+nnY0Xc6JzQo8LxaH8ZyX9HqWlxI0VOzilD3l9yCtLxJ8rHvjCrqXEpauZ8LGZCfYsJoKulqnyTMABjI2qiQwQPly3yrV/jjuWr/HHctX+OO5av8AHHctX+OO5av8cdy1f447lq/xx3KHFM8sTPocTwN+xXi9HOPbsgAhWCsFYKl/d039zdiobmgmHqw+FHSx1IkzOcMpC0yDmPWmQcx6bhcFuN60uDmPWlwcx6nYIppGNJs1xCohmq4Ojgdgi4IW5UlUKYvuwuzLVG8k9y1RvJPcm4qzknuQxNrnNaIT5kDf4Tm8sp97lhjb1X+m7Mwyyyj0eVFC+Z+RgF7XWn1X8W9y0+q/i3uTcOqrcLe5Q0FQ2WJzg2weCfPwcb3KwgXlmPsGzWjLVzj3lUT2x1LS5wAsV91Tc9i+6puexNqqa352JtRA9wa2VpKlNopD6MKO5YQPKc9W7OIi1ZJ1sVCwSSxsJIDnWWlw8x/g3csNF6odGFVRtTTH2JywkWgefWTZxUWqR1YFCcs0R9Ht8H4Yw8EhCZhcp4pGAKmo46clwc4uIVebUknUgJywwWo2dXOOzi4/XCfYfBmI1DeLK9MxOE8bHN/6vvqVrb/Vv0AT8U5cXcpquecZXuGX0CcqEWpIB7dnE4ZJWxFjC6xKILTYgg+h8RuWYIuTY5ZeBjnHoFA0shiYd4YBtPYx4s9ocOoUmGUr9wLD0UuFyM82StIUdPJK/K0tuo8I5s3ao6Glj3RAn1PmgANj/8QAKREAAQQABAQGAwAAAAAAAAAAAQACAxEEEBJSExQxYSAhI0JxoSQyUf/aAAgBAgEBPwDxtoubfS1y8W1cvFtXLxbVy8W1YhjWOaGjIdQpNeg6OqrFd1+V3WHe97nW61ij6g+M9R4WoddNrjz7PpGeajbfpYT3rEG5XZxm4W1tUM9XxHFSzR6HAOskLC/o75UvnK/5zw5BiaE6CJ3tpDDRj+lANYPKgE425x7+CKWSwNRU8j2VpKLnO6knP//EACMRAAIBAgUFAQAAAAAAAAAAAAECAANREBESITITICMxQnH/2gAIAQMBAT8A7z6M1tea2vOo06jRCSN8Vyz3njnilRVAGQlP1j9TQl5oS8q/MTiMTyP7GSwio2oHKVOQi8Ri/IwO14ajGbkweh2MotEAMyAx/9k=" alt="" width="100px" height="100px"></div>
+        <section> section is a block level element</section>
+    </div>
+</div>
+    
+</body>
+</html>
